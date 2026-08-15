@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+      ■ パッケージ可視性（要件定義書 §2.1）
+      Android 11 (API 30) 以降、他アプリの存在はデフォルトで見えない。
+      ここでランチャー Intent を宣言することで「ホーム画面に出るアプリ」だけが見えるようになる。
+      QUERY_ALL_PACKAGES は Play 審査で権限宣言フォームが必要になるため、意図的に使わない。
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <!--
+      ■ 使用状況へのアクセス（要件定義書 §2.2 / §2.3）
+      これは「特殊権限」で、通常の権限ダイアログでは付与できない。
+      ユーザーが 設定 > アプリ > 特別なアプリアクセス > 使用状況へのアクセス で手動 ON する。
+      tools:ignore を付けているのは、Lint が「アプリからは要求できない権限」と警告するため。
+      未許可でもアプリが成立する設計にしてある（F-15）。
+    -->
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- 1本ずつのアンインストール（必ず OS の確認ダイアログが出る。通常権限なので宣言のみで可） -->
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
+    <!--
+      ■ INTERNET 権限は意図的に宣言しない（要件定義書 §6）。
+      完全オフライン動作 = データ安全性フォームで「収集も共有もしない」と申告できる。
+    -->
+
+    <application
+        android:name=".AppShelfApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        tools:targetApi="33"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppShelf">
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode"
+            android:exported="true"
+            android:theme="@style/Theme.AppShelf">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

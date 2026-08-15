@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 以前の自動バックアップ対象。タグ・設定だけを引き継ぐ。 -->
+<full-backup-content>
+    <include domain="database" path="appshelf.db" />
+    <include domain="sharedpref" path="." />
+    <include domain="file" path="datastore" />
+</full-backup-content>

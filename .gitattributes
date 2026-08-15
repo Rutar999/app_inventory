@@ -1,0 +1,33 @@
+# 改行コードの扱い。
+#
+# ★重要: gradlew は Linux/macOS でシェルスクリプトとして実行される。
+# CRLF になると「bad interpreter」でビルドが落ちる。
+# F-Droid のビルドサーバは Linux なので、ここを間違えるとビルドが通らない。
+
+# 既定はすべて LF で保存する（Windows の作業コピーでも LF のまま扱う）
+* text=auto eol=lf
+
+# Windows 用バッチファイルだけは CRLF でないと動かない
+*.bat text eol=crlf
+
+# 明示しておく
+gradlew text eol=lf
+*.kt   text eol=lf
+*.kts  text eol=lf
+*.xml  text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+*.pro  text eol=lf
+*.toml text eol=lf
+*.properties text eol=lf
+
+# バイナリは変換しない
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.jar  binary
+*.aab  binary
+*.apk  binary
+*.jks  binary
+*.keystore binary

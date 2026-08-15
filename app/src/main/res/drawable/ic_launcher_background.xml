@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  アダプティブアイコンの背景レイヤー。
+
+  前景（元画像）は 108dp キャンバスの中央 78% にしか描かれない。
+  外周 11% ぶんはこの背景が見えるので、元画像の背景グラデーションを
+  そのまま外側へ線形外挿した色にしてある（継ぎ目が出ないようにするため）。
+
+  元画像の左端 #08274A / 右端 #075C75 を t=0.11 / t=0.89 とみなし、
+  t=0 / t=1 まで外挿した結果が下の 2 色。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M0,0 h108 v108 h-108 z">
+        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="0"
+                android:endX="108"
+                android:endY="0"
+                android:type="linear">
+                <item android:color="#082044" android:offset="0" />
+                <item android:color="#07637B" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

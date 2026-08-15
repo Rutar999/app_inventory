@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 既定ロケール = 日本語。英語は res/values-en/strings.xml -->
+<resources>
+    <string name="app_name">アプリ棚卸し</string>
+
+    <!-- ボトムナビゲーション -->
+    <string name="nav_home">ホーム</string>
+    <string name="nav_apps">アプリ</string>
+    <string name="nav_permissions">権限</string>
+    <string name="nav_settings">設定</string>
+
+    <!-- 共通 -->
+    <string name="action_back">戻る</string>
+    <string name="action_refresh">再読み込み</string>
+    <string name="action_close">閉じる</string>
+    <string name="action_cancel">キャンセル</string>
+    <string name="action_ok">OK</string>
+    <string name="action_save">保存</string>
+    <string name="action_delete">削除</string>
+    <string name="action_add">追加</string>
+    <string name="action_done">完了</string>
+    <string name="action_more">その他</string>
+    <string name="loading">読み込み中…</string>
+    <string name="value_unknown">—</string>
+
+    <!-- オンボーディング -->
+    <string name="onb_skip">スキップ</string>
+    <string name="onb_next">次へ</string>
+    <string name="onb_start">はじめる</string>
+    <string name="onb_p1_title">入れっぱなしのアプリを棚卸し</string>
+    <string name="onb_p1_body">インストール済みのアプリを一覧・検索・分析して、「消していいかどうか」を判断できる形で見せます。ホーム画面を置き換えるランチャーではありません。</string>
+    <string name="onb_p2_title">整理はこのアプリの中だけ</string>
+    <string name="onb_p2_body">タグ・お気に入り・非表示は、このアプリの一覧表示にだけ影響します。ホーム画面やアプリドロワーの並びは変わりません。アンインストールだけは Android の確認画面を通して実際に削除されます。</string>
+    <string name="onb_p3_title">通信は一切しません</string>
+    <string name="onb_p3_body">このアプリはインターネット権限を持っていません。読み取った情報が端末の外に出ることはありません。広告もアナリティクスも入っていません。</string>
+    <string name="onb_p4_title">使用状況へのアクセス（任意）</string>
+    <string name="onb_p4_body">「最終起動日」「使用時間」「アプリの容量」を表示するには、Android の特別な設定「使用状況へのアクセス」を ON にする必要があります。\n\n許可しなくても、一覧・検索・タグ・権限の確認はすべて使えます。あとから設定画面でいつでも切り替えられます。</string>
+
+    <!-- 使用状況アクセス -->
+    <string name="usage_access_title">使用状況へのアクセス</string>
+    <string name="usage_access_banner_title">使用状況へのアクセスが未許可です</string>
+    <string name="usage_access_banner_body">許可すると、最終起動日・使用時間・アプリ容量が表示できます。</string>
+    <string name="usage_access_grant">許可する</string>
+    <string name="usage_access_later">あとで</string>
+    <string name="usage_access_granted">許可済み</string>
+    <string name="usage_access_not_granted">未許可</string>
+    <string name="usage_access_why_title">何に使うのか</string>
+    <string name="usage_access_why_body">この権限は次の3つの表示にのみ使います。\n\n・各アプリの最終起動日\n・過去7日／30日の使用時間\n・アプリの容量（本体／データ／キャッシュ）\n\n取得した情報は端末内のデータベースに保存され、外部に送信されることは一切ありません。</string>
+    <string name="usage_access_open_settings">Android の設定を開く</string>
+    <string name="usage_access_howto">設定画面が開いたら、リストから「%1$s」を探してスイッチを ON にしてください。</string>
+
+    <!-- ホーム（ダッシュボード） -->
+    <string name="home_title">ホーム</string>
+    <string name="home_summary_total">アプリ総数</string>
+    <string name="home_summary_size">合計容量</string>
+    <string name="home_summary_unused">未使用</string>
+    <string name="home_summary_reclaimable">回収可能</string>
+    <string name="home_size_ranking">容量ランキング</string>
+    <string name="home_usage_ranking">使用時間ランキング（過去7日）</string>
+    <string name="home_see_all">すべて見る</string>
+    <string name="home_start_review">棚卸しを始める</string>
+    <string name="home_start_review_desc">%1$d日以上使っていないアプリを確認する</string>
+    <string name="home_old_apps">古いアプリ（インストール日順）</string>
+    <string name="home_old_apps_desc">使用状況が未許可のため、インストールしてから経過した日数で代替表示しています。</string>
+    <string name="home_no_unused">未使用のアプリはありません。よく整理されています。</string>
+
+    <!-- アプリ一覧 -->
+    <string name="apps_title">アプリ</string>
+    <string name="apps_search_hint">アプリ名・パッケージ名・タグ</string>
+    <string name="apps_search_clear">検索をクリア</string>
+    <string name="apps_sort">並び替え</string>
+    <string name="apps_view_mode">表示形式</string>
+    <string name="apps_view_list">リスト</string>
+    <string name="apps_view_grid">グリッド</string>
+    <string name="apps_filter_all">すべて</string>
+    <string name="apps_filter_favorite">お気に入り</string>
+    <string name="apps_filter_unused">未使用</string>
+    <string name="apps_filter_large">大容量</string>
+    <string name="apps_filter_system">システム</string>
+    <string name="apps_filter_untagged">タグなし</string>
+    <string name="apps_filter_tag">タグ: %1$s</string>
+    <string name="apps_empty">該当するアプリがありません</string>
+    <string name="apps_empty_hint">検索語やフィルタを変えてみてください。</string>
+    <string name="apps_selected">%1$d 件を選択中</string>
+    <string name="apps_select_all">すべて選択</string>
+    <string name="apps_bulk_tag">タグを付ける</string>
+    <string name="apps_bulk_hide">非表示にする</string>
+    <string name="apps_bulk_uninstall">アンインストール</string>
+
+    <!-- 並び替え -->
+    <string name="sort_name">名前</string>
+    <string name="sort_installed">インストール日が新しい順</string>
+    <string name="sort_updated">更新日が新しい順</string>
+    <string name="sort_size">容量が大きい順</string>
+    <string name="sort_last_used">最終起動が古い順</string>
+    <string name="sort_usage_time">使用時間が長い順</string>
+
+    <!-- アプリ詳細 -->
+    <string name="detail_title">アプリ詳細</string>
+    <string name="detail_section_storage">容量</string>
+    <string name="detail_section_usage">使用状況</string>
+    <string name="detail_section_info">基本情報</string>
+    <string name="detail_section_trend">推移</string>
+    <string name="detail_trend_size">容量の推移</string>
+    <string name="detail_trend_usage">使用時間の推移（各時点での直近30日）</string>
+    <string name="detail_trend_insufficient">推移を表示するには記録が2日ぶん以上必要です（現在 %1$d 件）。このアプリを開いた日に1回ずつ記録されるため、何日か使うとグラフが出ます。\n\nAndroid が保持する使用統計は日次で約7日ぶんだけなので、それより長い期間はこの記録でしか追えません。</string>
+    <string name="detail_section_tags">タグ</string>
+    <string name="detail_section_permissions">権限</string>
+    <string name="detail_size_app">アプリ本体</string>
+    <string name="detail_size_data">データ</string>
+    <string name="detail_size_cache">キャッシュ</string>
+    <string name="detail_size_total">合計</string>
+    <string name="detail_installed_at">インストール日</string>
+    <string name="detail_updated_at">最終更新日</string>
+    <string name="detail_last_used">最終起動</string>
+    <string name="detail_usage_7d">過去7日の使用時間</string>
+    <string name="detail_usage_30d">過去30日の使用時間</string>
+    <string name="detail_version">バージョン</string>
+    <string name="detail_package">パッケージ名</string>
+    <string name="detail_category">カテゴリ</string>
+    <string name="detail_type">種別</string>
+    <string name="detail_type_system">システムアプリ</string>
+    <string name="detail_type_user">ユーザーがインストール</string>
+    <string name="detail_note">メモ</string>
+    <string name="detail_note_hint">なぜ残す／消すのか、判断のメモを残せます</string>
+    <string name="detail_action_launch">起動</string>
+    <string name="detail_action_settings">システム設定</string>
+    <string name="detail_action_store">Play で開く</string>
+    <string name="detail_action_uninstall">アンインストール</string>
+    <string name="detail_favorite_on">お気に入りに追加</string>
+    <string name="detail_favorite_off">お気に入りから外す</string>
+    <string name="detail_hide_on">このアプリの一覧から隠す</string>
+    <string name="detail_hide_off">再表示する</string>
+    <string name="detail_cannot_uninstall">システムアプリのため削除できません</string>
+    <string name="detail_no_permissions">宣言されている権限はありません</string>
+    <string name="detail_permissions_granted">付与済み</string>
+    <string name="detail_permissions_denied">未付与</string>
+    <string name="detail_permission_open_settings">権限設定を開く</string>
+    <string name="detail_show_all_permissions">すべての権限を表示（%1$d件）</string>
+    <string name="detail_launch_failed">このアプリは起動できませんでした</string>
+    <string name="detail_store_failed">Play ストアを開けませんでした</string>
+
+    <!-- 権限タブ -->
+    <string name="perm_title">権限</string>
+    <string name="perm_subtitle">危険度の高い権限を持つアプリを逆引きできます</string>
+    <string name="perm_apps_with">%1$sを使えるアプリ</string>
+    <string name="perm_granted_count">付与済み %1$d 件 / 宣言 %2$d 件</string>
+    <string name="perm_empty">該当するアプリはありません</string>
+    <string name="perm_note">「宣言」はアプリが要求している権限、「付与済み」はユーザーが実際に許可した権限です。このアプリから他アプリの権限を取り消すことはできません（Android の仕様）。各アプリの設定画面へ案内するところまでが限界です。</string>
+    <string name="perm_filter_granted_only">付与済みのみ表示</string>
+
+    <!-- 権限グループ名 -->
+    <string name="pg_location">位置情報</string>
+    <string name="pg_camera">カメラ</string>
+    <string name="pg_microphone">マイク</string>
+    <string name="pg_contacts">連絡先</string>
+    <string name="pg_sms">SMS</string>
+    <string name="pg_phone">電話</string>
+    <string name="pg_call_log">通話履歴</string>
+    <string name="pg_calendar">カレンダー</string>
+    <string name="pg_storage">ストレージ・メディア</string>
+    <string name="pg_sensors">身体センサー</string>
+    <string name="pg_activity">身体活動</string>
+    <string name="pg_nearby">付近のデバイス</string>
+    <string name="pg_notifications">通知</string>
+
+    <!-- 設定 -->
+    <string name="settings_title">設定</string>
+    <string name="settings_section_data">データ</string>
+    <string name="settings_section_display">表示</string>
+    <string name="settings_section_manage">整理</string>
+    <string name="settings_section_about">このアプリについて</string>
+    <string name="settings_unused_days">未使用と判定する日数</string>
+    <string name="settings_unused_days_value">%1$d日</string>
+    <string name="settings_large_threshold">大容量と判定するサイズ</string>
+    <string name="settings_show_system">システムアプリを一覧に含める</string>
+    <string name="settings_theme">テーマ</string>
+    <string name="settings_theme_system">端末の設定に従う</string>
+    <string name="settings_theme_light">ライト</string>
+    <string name="settings_theme_dark">ダーク</string>
+    <string name="settings_dynamic_color">壁紙の色を使う（Dynamic Color）</string>
+    <string name="settings_dynamic_color_desc">Android 12 以降で有効</string>
+    <string name="settings_language">言語</string>
+    <string name="settings_language_desc">Android の「アプリの言語」設定を開きます</string>
+    <string name="settings_tags">タグを管理</string>
+    <string name="settings_hidden">非表示リスト（%1$d件）</string>
+    <string name="settings_export_csv">CSV で書き出す</string>
+    <string name="settings_export_json">JSON で書き出す</string>
+    <string name="settings_export_note">これは端末にインストールされている全アプリの記録です。アプリ画面の絞り込み（システムアプリの表示設定・非表示リスト・検索条件）は反映していないため、画面上の件数とは一致しません。</string>
+    <string name="settings_export_done">書き出しました</string>
+    <string name="settings_export_failed">書き出しに失敗しました</string>
+    <string name="settings_privacy">プライバシーポリシー</string>
+    <string name="settings_privacy_body">このアプリは、端末にインストールされているアプリの情報（名称・パッケージ名・バージョン・インストール日・容量・使用状況・宣言している権限）を読み取り、画面に表示します。\n\nこれらの情報およびあなたが作成したタグ・メモは、すべて端末内のデータベースにのみ保存されます。\n\nこのアプリはインターネット権限（android.permission.INTERNET）を宣言していないため、技術的に外部へ送信することができません。広告SDK・解析SDKも一切組み込んでいません。</string>
+    <string name="settings_licenses">オープンソースライセンス</string>
+    <string name="licenses_intro">このアプリは以下のオープンソースソフトウェアを利用しています。いずれも Apache License 2.0 のもとで提供されています。</string>
+    <string name="licenses_full_text">Apache License 2.0 全文</string>
+    <string name="settings_version">バージョン</string>
+
+    <!-- タグ管理 -->
+    <string name="tags_title">タグ</string>
+    <string name="tags_new">新しいタグ</string>
+    <string name="tags_name">タグ名</string>
+    <string name="tags_color">色</string>
+    <string name="tags_empty">まだタグがありません。よく使う分類（例: 仕事 / 使ってない / 保留）を作ると整理が進みます。</string>
+    <string name="tags_delete_confirm">タグ「%1$s」を削除しますか？付与済みのアプリからも外れます。</string>
+    <string name="tags_duplicate">同じ名前のタグがすでにあります</string>
+    <string name="tags_assign_title">タグを付ける</string>
+
+    <!-- 非表示リスト -->
+    <string name="hidden_title">非表示リスト</string>
+    <string name="hidden_empty">非表示にしたアプリはありません</string>
+    <string name="hidden_restore">再表示</string>
+    <string name="hidden_note">ここに入れたアプリは、このアプリの一覧に出なくなります。ホーム画面には影響しません。</string>
+
+    <!-- アンインストール -->
+    <string name="uninstall_title">アンインストール</string>
+    <string name="uninstall_progress">%1$d / %2$d 件目</string>
+    <string name="uninstall_start">開始する</string>
+    <string name="uninstall_skip">これはスキップ</string>
+    <string name="uninstall_stop">中止する</string>
+    <string name="uninstall_done">完了しました（%1$d 件削除）</string>
+
+    <!-- 未使用判定 -->
+    <string name="unused_never">起動記録なし</string>
+    <string name="unused_days_ago">%1$d日前</string>
+    <string name="unused_today">今日</string>
+    <string name="unused_yesterday">昨日</string>
+
+    <!-- 時間表記 -->
+    <string name="duration_none">0分</string>
+    <string name="duration_minutes">%1$d分</string>
+    <string name="duration_hours">%1$d時間%2$d分</string>
+
+    <!--
+      複数形。日本語は単複の区別が無いので other だけで足りるが、
+      英語では「1 apps」のような誤りになるため plurals にしている。
+    -->
+    <plurals name="count_apps">
+        <item quantity="other">%1$d 本</item>
+    </plurals>
+    <plurals name="apps_result_count">
+        <item quantity="other">%1$d 件</item>
+    </plurals>
+    <plurals name="tags_count_apps">
+        <item quantity="other">%1$d 本のアプリ</item>
+    </plurals>
+    <plurals name="uninstall_sequential">
+        <item quantity="other">%1$d 件のアプリを順番に削除します。1件ずつ Android の確認画面が出ます（まとめて削除することは Android の仕様上できません）。</item>
+    </plurals>
+    <plurals name="installed_days_ago">
+        <item quantity="other">インストールから%1$d日</item>
+    </plurals>
+</resources>

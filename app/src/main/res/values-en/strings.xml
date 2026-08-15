@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppShelf</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_apps">Apps</string>
+    <string name="nav_permissions">Permissions</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="action_back">Back</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_close">Close</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_add">Add</string>
+    <string name="action_done">Done</string>
+    <string name="action_more">More</string>
+    <string name="loading">Loading…</string>
+    <string name="value_unknown">—</string>
+
+    <string name="onb_skip">Skip</string>
+    <string name="onb_next">Next</string>
+    <string name="onb_start">Get started</string>
+    <string name="onb_p1_title">Take stock of your apps</string>
+    <string name="onb_p1_body">List, search and analyse your installed apps so you can decide what to keep. This is not a launcher — it does not replace your home screen.</string>
+    <string name="onb_p2_title">Organising stays inside this app</string>
+    <string name="onb_p2_body">Tags, favourites and hidden apps only affect the lists inside AppShelf. Your home screen and app drawer are untouched. Only uninstalling actually removes an app, and Android always shows its own confirmation.</string>
+    <string name="onb_p3_title">Nothing leaves your device</string>
+    <string name="onb_p3_body">This app does not declare the internet permission, so it is technically unable to send anything anywhere. No ads, no analytics.</string>
+    <string name="onb_p4_title">Usage access (optional)</string>
+    <string name="onb_p4_body">To show last-used dates, screen time and app sizes, Android requires the special "Usage access" setting to be enabled.\n\nWithout it you can still use the list, search, tags and permission views. You can change this at any time in Settings.</string>
+
+    <string name="usage_access_title">Usage access</string>
+    <string name="usage_access_banner_title">Usage access is not granted</string>
+    <string name="usage_access_banner_body">Grant it to see last-used dates, screen time and app sizes.</string>
+    <string name="usage_access_grant">Grant</string>
+    <string name="usage_access_later">Later</string>
+    <string name="usage_access_granted">Granted</string>
+    <string name="usage_access_not_granted">Not granted</string>
+    <string name="usage_access_why_title">What it is used for</string>
+    <string name="usage_access_why_body">This permission is used for three things only:\n\n• Last time each app was opened\n• Screen time over the last 7 and 30 days\n• App size (app, data, cache)\n\nEverything read is stored in a local database on this device and is never transmitted anywhere.</string>
+    <string name="usage_access_open_settings">Open Android settings</string>
+    <string name="usage_access_howto">When the settings screen opens, find "%1$s" in the list and turn the switch on.</string>
+
+    <string name="home_title">Home</string>
+    <string name="home_summary_total">Total apps</string>
+    <string name="home_summary_size">Total size</string>
+    <string name="home_summary_unused">Unused</string>
+    <string name="home_summary_reclaimable">Reclaimable</string>
+    <string name="home_size_ranking">Largest apps</string>
+    <string name="home_usage_ranking">Most used (last 7 days)</string>
+    <string name="home_see_all">See all</string>
+    <string name="home_start_review">Start reviewing</string>
+    <string name="home_start_review_desc">Apps not opened for %1$d days or more</string>
+    <string name="home_old_apps">Oldest installs</string>
+    <string name="home_old_apps_desc">Usage access is not granted, so apps are ranked by how long ago they were installed instead.</string>
+    <string name="home_no_unused">No unused apps. Nicely kept.</string>
+
+    <string name="apps_title">Apps</string>
+    <string name="apps_search_hint">Name, package or tag</string>
+    <string name="apps_search_clear">Clear search</string>
+    <string name="apps_sort">Sort</string>
+    <string name="apps_view_mode">Layout</string>
+    <string name="apps_view_list">List</string>
+    <string name="apps_view_grid">Grid</string>
+    <string name="apps_filter_all">All</string>
+    <string name="apps_filter_favorite">Favourites</string>
+    <string name="apps_filter_unused">Unused</string>
+    <string name="apps_filter_large">Large</string>
+    <string name="apps_filter_system">System</string>
+    <string name="apps_filter_untagged">Untagged</string>
+    <string name="apps_filter_tag">Tag: %1$s</string>
+    <string name="apps_empty">No apps match</string>
+    <string name="apps_empty_hint">Try a different search term or filter.</string>
+    <string name="apps_selected">%1$d selected</string>
+    <string name="apps_select_all">Select all</string>
+    <string name="apps_bulk_tag">Add tag</string>
+    <string name="apps_bulk_hide">Hide</string>
+    <string name="apps_bulk_uninstall">Uninstall</string>
+
+    <string name="sort_name">Name</string>
+    <string name="sort_installed">Newest install</string>
+    <string name="sort_updated">Newest update</string>
+    <string name="sort_size">Largest size</string>
+    <string name="sort_last_used">Least recently used</string>
+    <string name="sort_usage_time">Most screen time</string>
+
+    <string name="detail_title">App details</string>
+    <string name="detail_section_storage">Storage</string>
+    <string name="detail_section_usage">Usage</string>
+    <string name="detail_section_info">Details</string>
+    <string name="detail_section_trend">Trend</string>
+    <string name="detail_trend_size">Size over time</string>
+    <string name="detail_trend_usage">Screen time over time (last 30 days at each point)</string>
+    <string name="detail_trend_insufficient">At least two days of history are needed to draw a trend (currently %1$d). One record is kept per day that you open this app, so the chart appears after a few days.\n\nAndroid only keeps about seven days of daily usage statistics, so anything longer can only be tracked by this record.</string>
+    <string name="detail_section_tags">Tags</string>
+    <string name="detail_section_permissions">Permissions</string>
+    <string name="detail_size_app">App</string>
+    <string name="detail_size_data">Data</string>
+    <string name="detail_size_cache">Cache</string>
+    <string name="detail_size_total">Total</string>
+    <string name="detail_installed_at">Installed</string>
+    <string name="detail_updated_at">Last updated</string>
+    <string name="detail_last_used">Last opened</string>
+    <string name="detail_usage_7d">Screen time (7 days)</string>
+    <string name="detail_usage_30d">Screen time (30 days)</string>
+    <string name="detail_version">Version</string>
+    <string name="detail_package">Package name</string>
+    <string name="detail_category">Category</string>
+    <string name="detail_type">Type</string>
+    <string name="detail_type_system">System app</string>
+    <string name="detail_type_user">User installed</string>
+    <string name="detail_note">Note</string>
+    <string name="detail_note_hint">Why you keep it, or why it should go</string>
+    <string name="detail_action_launch">Open</string>
+    <string name="detail_action_settings">App info</string>
+    <string name="detail_action_store">View on Play</string>
+    <string name="detail_action_uninstall">Uninstall</string>
+    <string name="detail_favorite_on">Add to favourites</string>
+    <string name="detail_favorite_off">Remove from favourites</string>
+    <string name="detail_hide_on">Hide from this app</string>
+    <string name="detail_hide_off">Show again</string>
+    <string name="detail_cannot_uninstall">System app — cannot be uninstalled</string>
+    <string name="detail_no_permissions">No permissions declared</string>
+    <string name="detail_permissions_granted">Granted</string>
+    <string name="detail_permissions_denied">Not granted</string>
+    <string name="detail_permission_open_settings">Open permission settings</string>
+    <string name="detail_show_all_permissions">Show all permissions (%1$d)</string>
+    <string name="detail_launch_failed">This app could not be opened</string>
+    <string name="detail_store_failed">Could not open Play Store</string>
+
+    <string name="perm_title">Permissions</string>
+    <string name="perm_subtitle">Look up which apps can use each sensitive permission</string>
+    <string name="perm_apps_with">Apps that can use %1$s</string>
+    <string name="perm_granted_count">%1$d granted of %2$d declared</string>
+    <string name="perm_empty">No apps match</string>
+    <string name="perm_note">"Declared" means the app requests the permission; "granted" means you actually allowed it. Android does not let this app revoke another app\'s permissions — it can only take you to that app\'s settings screen.</string>
+    <string name="perm_filter_granted_only">Granted only</string>
+
+    <string name="pg_location">Location</string>
+    <string name="pg_camera">Camera</string>
+    <string name="pg_microphone">Microphone</string>
+    <string name="pg_contacts">Contacts</string>
+    <string name="pg_sms">SMS</string>
+    <string name="pg_phone">Phone</string>
+    <string name="pg_call_log">Call log</string>
+    <string name="pg_calendar">Calendar</string>
+    <string name="pg_storage">Files &amp; media</string>
+    <string name="pg_sensors">Body sensors</string>
+    <string name="pg_activity">Physical activity</string>
+    <string name="pg_nearby">Nearby devices</string>
+    <string name="pg_notifications">Notifications</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_data">Data</string>
+    <string name="settings_section_display">Display</string>
+    <string name="settings_section_manage">Organise</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_unused_days">Unused threshold</string>
+    <string name="settings_unused_days_value">%1$d days</string>
+    <string name="settings_large_threshold">Large app threshold</string>
+    <string name="settings_show_system">Include system apps</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_system">Follow system</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_dynamic_color">Use wallpaper colours</string>
+    <string name="settings_dynamic_color_desc">Android 12 and later</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_desc">Opens Android\'s per-app language setting</string>
+    <string name="settings_tags">Manage tags</string>
+    <string name="settings_hidden">Hidden apps (%1$d)</string>
+    <string name="settings_export_csv">Export as CSV</string>
+    <string name="settings_export_json">Export as JSON</string>
+    <string name="settings_export_note">This is a record of every app installed on the device. It does not reflect the filters used in the app screens (system app visibility, hidden list, search), so the count will not match what you see on screen.</string>
+    <string name="settings_export_done">Exported</string>
+    <string name="settings_export_failed">Export failed</string>
+    <string name="settings_privacy">Privacy policy</string>
+    <string name="settings_privacy_body">This app reads information about the apps installed on your device (name, package name, version, install date, size, usage and declared permissions) and displays it on screen.\n\nThat information, together with any tags and notes you create, is stored only in a database on this device.\n\nThe app does not declare the internet permission (android.permission.INTERNET), so it is technically incapable of sending anything off the device. It contains no advertising or analytics SDKs.</string>
+    <string name="settings_licenses">Open source licences</string>
+    <string name="licenses_intro">This app uses the following open source software. All of it is provided under the Apache License 2.0.</string>
+    <string name="licenses_full_text">Apache License 2.0 — full text</string>
+    <string name="settings_version">Version</string>
+
+    <string name="tags_title">Tags</string>
+    <string name="tags_new">New tag</string>
+    <string name="tags_name">Tag name</string>
+    <string name="tags_color">Colour</string>
+    <string name="tags_empty">No tags yet. Creating a few (e.g. Work / Unused / Undecided) makes reviewing much faster.</string>
+    <string name="tags_delete_confirm">Delete the tag "%1$s"? It will be removed from every app it is on.</string>
+    <string name="tags_duplicate">A tag with that name already exists</string>
+    <string name="tags_assign_title">Add tag</string>
+
+    <string name="hidden_title">Hidden apps</string>
+    <string name="hidden_empty">No hidden apps</string>
+    <string name="hidden_restore">Restore</string>
+    <string name="hidden_note">Hidden apps disappear from lists inside AppShelf. Your home screen is not affected.</string>
+
+    <string name="uninstall_title">Uninstall</string>
+    <string name="uninstall_progress">%1$d of %2$d</string>
+    <string name="uninstall_start">Start</string>
+    <string name="uninstall_skip">Skip this one</string>
+    <string name="uninstall_stop">Stop</string>
+    <string name="uninstall_done">Finished (%1$d removed)</string>
+
+    <string name="unused_never">Never opened</string>
+    <string name="unused_days_ago">%1$d days ago</string>
+    <string name="unused_today">Today</string>
+    <string name="unused_yesterday">Yesterday</string>
+
+    <string name="duration_none">0 min</string>
+    <string name="duration_minutes">%1$d min</string>
+    <string name="duration_hours">%1$d h %2$d min</string>
+    <plurals name="count_apps">
+        <item quantity="one">%1$d app</item>
+        <item quantity="other">%1$d apps</item>
+    </plurals>
+    <plurals name="apps_result_count">
+        <item quantity="one">%1$d result</item>
+        <item quantity="other">%1$d results</item>
+    </plurals>
+    <plurals name="tags_count_apps">
+        <item quantity="one">%1$d app</item>
+        <item quantity="other">%1$d apps</item>
+    </plurals>
+    <plurals name="uninstall_sequential">
+        <item quantity="one">%1$d app will be removed. Android shows its own confirmation for it — bulk removal is not possible on Android.</item>
+        <item quantity="other">%1$d apps will be removed one at a time. Android shows its own confirmation for each one — bulk removal is not possible on Android.</item>
+    </plurals>
+    <plurals name="installed_days_ago">
+        <item quantity="one">Installed %1$d day ago</item>
+        <item quantity="other">Installed %1$d days ago</item>
+    </plurals>
+</resources>

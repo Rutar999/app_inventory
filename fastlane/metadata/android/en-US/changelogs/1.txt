@@ -1,0 +1,12 @@
+First release.
+
+・List, search and sort your installed apps
+・Storage ranking and unused app detection
+・Reverse lookup by sensitive permission
+・Tags, favourites and a hidden list
+・Uninstall selected apps one after another
+・Long-term trend charts for size and screen time
+・CSV / JSON export
+・Japanese / English, dark theme, Dynamic Color
+
+The app does not declare the internet permission, so nothing can leave your device.

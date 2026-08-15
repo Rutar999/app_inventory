@@ -1,0 +1,19 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# 署名鍵と、そのパスワードを書いたファイル（絶対にコミットしない）
+keystore.properties
+*.jks
+*.keystore
+
+# 開発中に生成した機密情報を含むメモ
+docs/secrets/

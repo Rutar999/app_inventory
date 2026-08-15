@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Compose アプリなので XML テーマは「起動時の見た目」だけを担当する。
+      実際の配色は ui/theme/Theme.kt（Material 3 + Dynamic Color）が決める。
+    -->
+    <style name="Theme.AppShelf" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

@@ -1,0 +1,41 @@
+"When did I last use this app?" "Which one is eating my storage?"
+"Which apps can reach my microphone?"
+
+AppShelf answers those three questions.
+
+It is not a launcher and does not replace your home screen. It is a tool you open
+a few times a year to take stock of what is installed.
+
+■ What it does
+・Lists, searches and sorts your installed apps
+・Storage ranking with an app / data / cache breakdown
+・Detects unused apps from last-used date and screen time
+・Reverse lookup by sensitive permission (e.g. "8 apps can use the microphone")
+・Tags, favourites and a hidden list for your own classification
+・Uninstall selected apps one after another
+・Long-term trend charts for size and screen time
+・CSV / JSON export
+
+■ Privacy
+This app does not declare the internet permission (android.permission.INTERNET).
+It is technically incapable of sending anything off your device.
+No advertising SDKs, no analytics SDKs, no account required.
+
+■ Permissions
+・Usage access (optional)
+  Used only to show last-used dates, screen time and app sizes.
+  Without it you can still use the list, search, tags and permission views.
+・Request delete packages
+  Android always shows its own confirmation for each app.
+  Silent or bulk uninstall is not possible on Android.
+
+■ What it cannot do (Android restrictions)
+・Revoke another app's permissions (it can only take you to that app's settings)
+・Uninstall or disable system apps
+・Uninstall apps without confirmation
+・"Hidden" only affects lists inside this app, never your home screen
+
+■ Technical notes
+Built with Kotlin, Jetpack Compose, Material 3 and Room.
+App discovery uses the <queries> launcher-intent declaration rather than
+QUERY_ALL_PACKAGES. Source code is published under the Apache License 2.0.
